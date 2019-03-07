@@ -1,0 +1,40 @@
+.train {
+    background-color: #eeeeee;
+}
+
+.train-input {
+    border-bottom-color: cornflowerblue;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-top-width: 0px;
+    border-bottom-width: 1px;
+    outline-width: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 150px;
+    color: cornflowerblue;
+    caret-color: cornflowerblue;
+    width: auto;
+    text-indent: 5px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: cornflowerblue;
+  opacity: 0.5; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: cornflowerblue;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: cornflowerblue;
+}
+
+.train-solution {
+    color: lightseagreen;
+}
+
+.train-no-solution {
+    color: crimson;
+}

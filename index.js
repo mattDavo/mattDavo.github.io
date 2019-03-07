@@ -9,9 +9,13 @@ input.addEventListener('keyup', (e) => {
         solveable.style.display = 'block';
         if (isSolveable(puzzle)) {
             solveable.textContent = "Solveable!"
+            solveable.classList.add('train-solution');
+            solveable.classList.remove('train-no-solution');
         }
         else {
             solveable.textContent = "Unsolveable!"
+            solveable.classList.remove('train-solution');
+            solveable.classList.add('train-no-solution');
         }
     }
     else {

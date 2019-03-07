@@ -4,17 +4,45 @@
 <head>
     <meta charset="UTF-8" />
     <title>Matt Davidson</title>
+    <link rel="stylesheet" type="text/css" href="css/bulma.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
 </head>
 
 <body>
-
-    <h2>Matthew Davidson</h2>
+    <section class="hero is-small is-primary">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <div class="is-flex" style="justify-content: center;">
+                    <figure class="image is-256x256">
+                        <img class="is-rounded" src="images/me.jpg" style="width: 256px; height: 256px; overflow: hidden; object-fit: cover">
+                    </figure>
+                </div>
+                <h1 class="title is-1">Matt Davidson</h1>
+                <h5 class="subtitle is-5">UNSW Computer Science Co-op</h2>
+                <a class="icon is-large" href="https://www.linkedin.com/in/matthew-davidson-5b677b150/">
+                    <i class="fab fa-3x fa-linkedin"></i>
+                </a>
+                <a class="icon is-large" href="https://github.com/mattDavo">
+                    <i class="fab fa-3x fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </section>
     
-    <h3>Train Game Solver:</h3>
-    <form>
-        <input type="text" id="input" maxlength="4"/>
-    </form>
-    <h3 id="solveable" style="display: none"></h3>
+    <section class="section is-medium train">
+        <div class="container has-text-centered " style="padding-bottom: 50px">
+            <h1 class="title is-1">Train Game Solver</h1> 
+            <form style="padding: 50px">
+                <input type="text" id="input" maxlength="4" class="train train-input" placeholder="1234" size="4"/>
+            </form>
+            <h1 class="title is-2 is-primary" id="solveable" style="display: none"></h1>
+        </div>
+    </section>
+    
+    
     
     <!-- We will put our React component inside this div. -->
     <div id="like_button_container"></div>
