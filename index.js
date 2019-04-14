@@ -6,7 +6,6 @@ input.addEventListener('keydown', validateNumber);
 input.addEventListener('keyup', (e) => {
     if (input.value.length == 4) {
         let puzzle = Array.from(input.value).map(i => { return parseInt(i) });
-        solveable.style.display = 'block';
         if (isSolveable(puzzle)) {
             solveable.textContent = "Solveable!"
             solveable.classList.add('train-solution');
@@ -19,9 +18,11 @@ input.addEventListener('keyup', (e) => {
         }
     }
     else {
-        solveable.style.display = 'none';
+        solveable.textContent = "Enter 4 digits"
+        solveable.classList.remove('train-solution');
+        solveable.classList.remove('train-no-solution');
     }
-})
+});
 
 
 

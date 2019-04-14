@@ -47,8 +47,8 @@
     <section class="section welcome">
         <div class="container has-text-centered" style="padding-bottom: 50px">
             <h1 class="title is-1 welcome">Hello</h1>
-            <p class="subtitle is-5 welcome">Hey I'm Matt, welcome to my site!</p>
-            <p class="subtitle is-5 welcome">I'm a keen computer scientist graduating from the University of New South Wales, Sydney in 2020. I love to work on cool projects and always trying to learn something new to build better software. I have experience working with python as a data engineer and building native mobile apps. In my spare time I like to contribute to the open source community (so far mainly building Swift packages).</p>
+            <p class="subtitle is-5 welcome">Hey I'm Matt, welcome to my colourful site!</p>
+            <p class="subtitle is-5 welcome">I'm a keen Computer Scientist graduating from the University of New South Wales, Sydney in 2020. I love to work on cool projects and always trying to learn something new to build better software. I have experience working with python as a data engineer and building native mobile apps. In my spare time I like to contribute to the open source community (so far mainly building Swift packages).</p>
             <p class="subtitle is-5 welcome">When I'm not behind a keyboard, I'm probably playing golf, listening to music, grabbing a Chicken Parma with mates, travelling the world or all of the above!</p>
         </div>
     </section>
@@ -189,14 +189,23 @@
         </div>
     </section>
     
+    <section class="section" style="background-color: rgba(255, 127, 80, 0.8)">
+        <div class="container has-text-centered">
+            <h1 class="title is-1">Other Fun Projects</h1>
+        </div>
+    </section>
+    
     <!-- Train Game Solver -->
-    <section class="section is-medium train">
-        <div class="container has-text-centered" style="padding-bottom: 50px">
-            <h1 class="title is-1">Train Game Solver</h1> 
-            <form style="padding: 50px">
+    <section class="section train">
+        <div class="container has-text-centered">
+            <h1 class="title is-2">Train Game Solver</h1>
+            <p class="subtitle is-4">Solver to the train/bus/ferry/tram/any 4 digit number game. Must make 10 by using all 4 numbers in order. Can use any number of parentheses and the + - × ÷ operators.</p>
+            <form style="padding: 30px; padding-top: 15px">
                 <input type="text" id="input" maxlength="4" class="train train-input" placeholder="1234" size="4"/>
             </form>
-            <h1 class="title is-2 is-primary" id="solveable" style="display: none"></h1>
+            <h1 class="title is-2 is-primary" id="solveable" style="display: block; padding-bottom: 10px">Enter 4 digits</h1>
+            <p class="subtitle is-5">This solution uses dynamic programming where the solution to each subproblem P(i,j) is the set of numbers that can be produced with the subsequence of indexes i to j. We solve subproblems in order of increasing length of subsequence (that is j - i). Then our puzzle is solveable if 10 exists in the set of the solution to P(1,4).</p>
+            <p class="subtitle is-5">This solution can easily be extended to solve similar problems with longer sequences and/or a larger range of values allowed for numbers in the sequence since (instead of limiting them to single digits). Additionally, the solution can be easily altered to solve for different numbers, instead of 10. All of these modifications will scale much better than a brute force attempt of placing parentheses and operators in the possible combinations.</p>
         </div>
     </section>
     <script src="index.js"></script>
