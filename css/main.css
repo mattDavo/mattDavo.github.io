@@ -2,6 +2,27 @@
     background-color: #eeeeee;
 }
 
+.link-icon {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.open-source {
+    background-color:#24292e;
+}
+
+.welcome {
+    background-color: dodgerblue;
+}
+
+.title.welcome, .subtitle.welcome {
+    color: whitesmoke;
+}
+
+.title.open-source, .subtitle.open-source {
+    color: whitesmoke;
+}
+
 .train-input {
     border-bottom-color: cornflowerblue;
     border-left-width: 0px;
@@ -37,4 +58,50 @@
 
 .train-no-solution {
     color: crimson;
+}
+
+/* Westpac */
+div.westpac {
+    background-color: red;
+}
+
+p.westpac {
+  color: whitesmoke;
+}
+
+.title.westpac, .subtitle.westpac {
+  color: whitesmoke;
+}
+
+/* Coffee Better */
+div.coffee-better {
+    background-color: #7c3810;
+}
+
+p.coffee-better {
+  color: whitesmoke;
+}
+
+.title.coffee-better, .subtitle.coffee-better {
+  color: whitesmoke;
+}
+
+/* Policy Pilot */
+div.policy-pilot {
+    background-color: whitesmoke;
+}
+
+p.policy-pilot {
+  color: black;
+}
+
+.title.policy-pilot, .subtitle.policy-pilot {
+  color: black;
+}
+
+/* Recent work cards */
+.work-card {
+  border-radius: 10px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
 }

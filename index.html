@@ -12,6 +12,7 @@
 </head>
 
 <body>
+    <!-- Header -->
     <section class="hero is-small is-primary">
         <div class="hero-body">
             <div class="container has-text-centered">
@@ -22,21 +23,175 @@
                 </div>
                 <h1 class="title is-1">Matt Davidson</h1>
                 <h5 class="subtitle is-5">UNSW Computer Science Co-op</h2>
-                <a class="icon is-large" href="https://www.linkedin.com/in/matthew-davidson-5b677b150/">
-                    <i class="fab fa-3x fa-linkedin"></i>
-                </a>
-                <a class="icon is-large" href="https://github.com/mattDavo">
-                    <i class="fab fa-3x fa-github"></i>
-                </a>
-                <a class="icon is-large" target="_blank" href="https://docs.google.com/viewer?url=https://docs.google.com/document/d/1n-n-Btbvm097evcD59gh9OZTT3npUGSudRA2pYkB2Wo/export?format=pdf">
-                    <i class="far fa-3x fa-file"></i>
-                </a>
+                <div>
+                    <a class="icon is-large link-icon" target="_blank" href="https://www.linkedin.com/in/matthew-davidson-5b677b150/">
+                        <i class="fab fa-3x fa-linkedin"></i>
+                    </a>
+                    <a class="icon is-large link-icon" target="_blank" href="https://github.com/mattDavo">
+                        <i class="fab fa-3x fa-github"></i>
+                    </a>
+                    <a class="icon is-large link-icon" href="mailto:mad1512@optusnet.com.au">
+                        <i class="fas fa-3x fa-envelope"></i>
+                    <a class="icon is-large link-icon" target="_blank" href="https://docs.google.com/viewer?url=https://docs.google.com/document/d/1n-n-Btbvm097evcD59gh9OZTT3npUGSudRA2pYkB2Wo/export?format=pdf">
+                        <i class="fas fa-3x fa-file-alt"></i>
+                    </a>
+                    <a class="icon is-large link-icon" target="_blank" href="https://www.facebook.com/matthew.davidson.33234">
+                        <i class="fab fa-3x fa-facebook"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
     
-    <section class="section is-medium train">
+    <!-- Welcome -->
+    <section class="section welcome">
+        <div class="container has-text-centered" style="padding-bottom: 50px">
+            <h1 class="title is-1 welcome">Hello</h1>
+            <p class="subtitle is-5 welcome">Hey I'm Matt, welcome to my site!</p>
+            <p class="subtitle is-5 welcome">I'm a keen computer scientist graduating from the University of New South Wales, Sydney in 2020. I love to work on cool projects and always trying to learn something new to build better software. I have experience working with python as a data engineer and building native mobile apps. In my spare time I like to contribute to the open source community (so far mainly building Swift packages).</p>
+            <p class="subtitle is-5 welcome">When I'm not behind a keyboard, I'm probably playing golf, listening to music, grabbing a Chicken Parma with mates, travelling the world or all of the above!</p>
+        </div>
+    </section>
+    
+    <!-- Recent Work -->
+    <section class="section">
         <div class="container has-text-centered " style="padding-bottom: 50px">
+            <h1 class="title is-1">Recent Work</h1>
+        </div>
+        <div class="tile is-ancestor">
+            <div class="tile">
+                <div class="tile is-parent is-vertical">
+                    <div class="card westpac work-card">
+                        <div class="card-content">
+                            <div class="content">
+                                <p class="title westpac">Westpac, DDEP</p>
+                                <p class="subtitle westpac">Data Engineer, July - December 2018</p>
+                                <p class="westpac">Developed Inbound JSON functionality for Data Driven Experiences Platform
+                                python framework, which provides the ability to ingest large JSON datasets with
+                                optional pre-processing, validate schemas and produce a Hive table on top.</p>
+                            </div>
+                        </div>
+                        <div class="card-image">
+                            <figure class="image is-4by3"><img src="/images/westpac.JPG"></figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="tile is-parent is-vertical">
+                    <div class="card coffee-better work-card">
+                        <div class="card-content">
+                            <div class="content">
+                                <p class="title coffee-better">coffee better™️</p>
+                                <p class="subtitle coffee-better">iOS Developer, March 2018 - Current</p>
+                                <p class="coffee-better">Lead iOS developer for coffee better. Built in Swift with Google Firebase for data
+                                collecting/storage and Google and Facebook authentication.</p>
+                                <a class="button is-rounded" target="_blank" href="https://coffeebetter.com.au/">Website</a>
+                                <a class="button is-rounded" target="_blank" href="https://itunes.apple.com/au/app/coffee-better/id1434229741?mt=8">App Store</a>
+                            </div>
+                        </div>
+                        <div class="card-image">
+                            <figure class="image is-4by5"><img src="/images/coffee-better.jpeg"style="overflow: hidden; object-fit: cover"></figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="tile is-parent is-vertical">
+                    <div class="card work-card policy-pilot">
+                        <div class="card-content">
+                            <div class="content">
+                                <p class="title policy-pilot">Policy Pilot</p>
+                                <p class="subtitle policy-pilot">React Native App, January 2018</p>
+                                <p class="policy-pilot">A simple, colourful, proof of concept app built in React Native, to highlight the
+                                    good, neutral and bad points in the
+                                    terms and conditions of over 60 web services.</p>
+                                <a class="button is-rounded" target="_blank" href="http://policypilot.dcg.nz/">Website</a>
+                                <a class="button is-rounded" target="_blank"
+                                    href="https://play.google.com/store/apps/details?id=com.policypilot&hl=en&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1">Play
+                                    Store</a>
+                            </div>
+                        </div>
+                        <div class="card-image">
+                            <figure class="image is-4by3"><img src="/images/policypilot.png" style="overflow: hidden; object-fit: cover">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Open Source -->
+    <section class="section open-source">
+        <div class="container has-text-centered" style="padding-bottom: 50px">
+            <h1 class="title is-1 open-source">Open Source</h1>
+            <!-- <p class="subtitle is-5 open-source">Subtitle</p> -->
+        </div>
+        <div class="tile is-ancestor">
+            <div class="tile is-parent">
+                <article class="tile is-child box">
+                    <p class="title">UIImageDefaults</p>
+                    <div class="content">
+                        
+                        <a class="button is-success is-fullwidth is-large" target="_blank" href="https://github.com/mattDavo/UIImageDefaults">
+                            <span class="icon is-large">
+                                <i class="fab fa-github"></i>
+                            </span>
+                            <span>Source Code</span>
+                        </a>
+                        <br />
+                        <p class="subtitle">Simple Swift extension for locally saving and loading images with ease.</p>
+                    </div>
+                </article>
+            </div>
+            <div class="tile is-parent">
+                <article class="tile is-child box">
+                    <p class="title">ShelfView</p>
+                    <div class="content">
+                        <a class="button is-success is-fullwidth is-large" target="_blank" href="https://github.com/mattDavo/ShelfView">
+                            <span class="icon is-large">
+                                <i class="fab fa-github"></i>
+                            </span>
+                            <span>Source Code</span>
+                        </a>
+                        <br />
+                        <p class="subtitle">A simple Swift library for creating a simple shelf view.</p>
+                    </div>
+                </article>
+            </div>
+            <div class="tile is-parent">
+                <article class="tile is-child box">
+                    <p class="title">Stringly</p>
+                    <div class="content">
+                        <a class="button is-success is-fullwidth is-large" target="_blank" href="https://github.com/mattDavo/Stringly">
+                            <span class="icon is-large">
+                                <i class="fab fa-github"></i>
+                            </span>
+                            <span>Source Code</span>
+                        </a>
+                        <br />
+                        <p class="subtitle">Work in progress easily extensible library for creating formatted NSAttributedStrings from basic XML.</p>
+                    </div>
+                </article>
+            </div>
+            <div class="tile is-parent">
+                <article class="tile is-child box">
+                    <p class="title">Lingo</p>
+                    <div class="content">
+                        <a class="button is-success is-fullwidth is-large" target="_blank" href="https://github.com/mattDavo/Lingo">
+                            <span class="icon is-large">
+                                <i class="fab fa-github"></i>
+                            </span>
+                            <span>Source Code</span>
+                        </a>
+                        <br />
+                        <p class="subtitle">A work in progress Swift Localization Library. Lingo will find all localization key-value pairs in .strings files and put the keys in a easy to access global structure.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Train Game Solver -->
+    <section class="section is-medium train">
+        <div class="container has-text-centered" style="padding-bottom: 50px">
             <h1 class="title is-1">Train Game Solver</h1> 
             <form style="padding: 50px">
                 <input type="text" id="input" maxlength="4" class="train train-input" placeholder="1234" size="4"/>
@@ -44,17 +199,6 @@
             <h1 class="title is-2 is-primary" id="solveable" style="display: none"></h1>
         </div>
     </section>
-    
-    <!-- We will put our React component inside this div. -->
-    <div id="like_button_container"></div>
-
-    <!-- Load React. -->
-    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->
-    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
-
-    <!-- Load our React component. -->
-    <!-- <script src="like_button.js"></script> -->
     <script src="index.js"></script>
 </body>
 
