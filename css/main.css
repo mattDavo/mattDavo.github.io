@@ -48,11 +48,13 @@ a.masters {
     outline-width: 0px;
     padding-left: 0px;
     padding-right: 0px;
-    font-size: 150px;
+    font-size: 140px;
     color: cornflowerblue;
     caret-color: cornflowerblue;
     width: auto;
     text-indent: 5px;
+    margin-left: -50px;
+    margin-right: -50px;
 }
 
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */

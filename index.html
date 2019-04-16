@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matt Davidson</title>
     <link rel="stylesheet" type="text/css" href="css/bulma.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -253,7 +253,7 @@
             <h1 class="title is-2">Train Game Solver</h1>
             <p class="subtitle is-4">Solver to the train/bus/ferry/tram/any 4 digit number game. Must make 10 by using all 4 numbers in order. Can use any number of parentheses and the + - × ÷ operators.</p>
             <form style="padding: 30px; padding-top: 15px">
-                <input type="text" id="input" maxlength="4" class="train train-input" placeholder="1234" size="4"/>
+                <input type="text" id="input" maxlength="4" class="train train-input" placeholder="1234" size="4" style="max-width: 120%;"/>
             </form>
             <h1 class="title is-2 is-primary" id="solveable" style="display: block; padding-bottom: 10px">Enter 4 digits</h1>
             <p class="subtitle is-5">This solution uses dynamic programming where the solution to each subproblem P(i,j) is the set of numbers that can be produced with the subsequence of indexes i to j. We solve subproblems in order of increasing length of subsequence (that is j - i). Then our puzzle is solveable if 10 exists in the set of the solution to P(1,4).</p>
