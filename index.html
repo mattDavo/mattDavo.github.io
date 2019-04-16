@@ -6,9 +6,9 @@
     <title>Matt Davidson</title>
     <link rel="stylesheet" type="text/css" href="css/bulma.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
+    <link href="/fontawesome/css/fontawesome.min.css" rel="stylesheet">
+    <link href="/fontawesome/css/brands.min.css" rel="stylesheet">
+    <link href="/fontawesome/css/solid.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -41,20 +41,41 @@
                 </div>
             </div>
         </div>
+        <div class="hero-footer">
+            <nav class="level" style="padding-bottom: 10px;">
+                <p class="level-item has-text-centered">
+                    <a data-target="hello" class="title is-3 link is-info section-link-item">Hello</a>
+                </p>
+                <p class="level-item has-text-centered">
+                    <a data-target="recent-work" class="title is-3 link is-info section-link-item">Recent Work</a>
+                </p>
+                <p class="level-item has-text-centered">
+                    <a data-target="open-source" class="title is-3 link is-info section-link-item">Open Source</a>
+                </p>
+                <p class="level-item has-text-centered">
+                    <a data-target="other-projects" class="title is-3 link is-info section-link-item">Other Projects</a>
+                </p>
+            </nav>
+        </div>
     </section>
     
     <!-- Welcome -->
-    <section class="section welcome">
-        <div class="container has-text-centered" style="padding-bottom: 50px">
-            <h1 class="title is-1 welcome">Hello</h1>
-            <p class="subtitle is-5 welcome">Hey I'm Matt, welcome to my colourful site!</p>
-            <p class="subtitle is-5 welcome">I'm a keen Computer Scientist graduating from the University of New South Wales, Sydney in 2020. I love to work on cool projects and always trying to learn something new to build better software. I have experience working with python as a data engineer and building native mobile apps. In my spare time I like to contribute to the open source community (so far mainly building Swift packages).</p>
-            <p class="subtitle is-5 welcome">When I'm not behind a keyboard, I'm probably playing golf, listening to music, grabbing a Chicken Parma with mates, travelling the world or all of the above!</p>
+    <section class="section welcome" id="hello">
+        <div class="columns welcome">
+            <div class="column is-three-fifths">
+                <h1 class="title is-1 welcome">Hello</h1>
+                <p class="subtitle is-5 welcome">Hey I'm Matt, welcome to my colourful site!</p>
+                <p class="subtitle is-5 welcome">I'm a keen Computer Scientist graduating from the University of New South Wales, Sydney in 2020. I love to work on cool projects and always trying to learn something new to build better software. I have experience working with python as a data engineer and building native mobile apps. In my spare time I like to contribute to the open source community (so far mainly building Swift packages).</p>
+                <p class="subtitle is-5 welcome">When I'm not behind a keyboard, I'm probably playing golf, listening to music, grabbing a Chicken Parma with mates, travelling the world or all of the above!</p>
+            </div>
+            <div class="column">
+                <img src="/images/me1.jpg" style="overflow: hidden; object-fit: cover">
+            </div>
         </div>
     </section>
     
     <!-- Recent Work -->
-    <section class="section">
+    <section class="section" id="recent-work">
         <div class="container has-text-centered " style="padding-bottom: 50px">
             <h1 class="title is-1">Recent Work</h1>
         </div>
@@ -109,7 +130,7 @@
                             </div>
                         </div>
                         <div class="card-image">
-                            <figure class="image is-4by3"><img src="/images/policypilot.png" style="overflow: hidden; object-fit: cover">
+                            <figure class="image is-4by3"><img src="/images/policypilot.jpg" style="overflow: hidden; object-fit: cover">
                             </figure>
                         </div>
                     </div>
@@ -119,7 +140,7 @@
     </section>
     
     <!-- Open Source -->
-    <section class="section open-source">
+    <section class="section open-source" id="open-source">
         <div class="container has-text-centered" style="padding-bottom: 50px">
             <h1 class="title is-1 open-source">Open Source</h1>
             <!-- <p class="subtitle is-5 open-source">Subtitle</p> -->
@@ -189,9 +210,40 @@
         </div>
     </section>
     
-    <section class="section" style="background-color: rgba(255, 127, 80, 0.8)">
+    <!-- Other Projects -->
+    <section id="other-projects" class="section" style="background-color: rgba(255, 127, 80, 0.8)">
         <div class="container has-text-centered">
             <h1 class="title is-1">Other Fun Projects</h1>
+            <p class="subtitle is-4">Just stuff I've made for the fun of it.</p>
+        </div>
+    </section>
+    
+    <!-- Masters Shotlink -->
+    <section class="section masters">
+        <div class="columns masters">
+            <div class="column is-two-fifths masters">
+                <img class="masters" src="/images/masters.jpg" style="overflow: hidden; object-fit: cover">
+                <img class="masters" src="/images/H01W.jpg" style="overflow: hidden; object-fit: cover">
+            </div>
+            <div class="column masters">
+                <h1 class="title is-2 masters">Masters Shotlink</h1>
+                <p class="subtitle is-5 masters">
+                    As golf’s majors don’t have <a class="masters" target="_blank" href="http://www.shotlink.com">shotlink</a> there is unfortunately no strokes gained statistics at
+                    any of the majors. This is unfortunate since strokes gained is one of the most relied upon statistics in golf as it is
+                    more telling than traditional statistics. However, tracking <a class="masters" target="_blank" href="https://www.pgatour.com/news/2016/05/31/strokes-gained-defined.html">strokes gained</a> statistics requires much more tracking
+                    information. Until recently we have never gotten an insight to the US Masters through strokes gained statistics but
+                    with Joe Peta’s 3 months of manual work and the <a class="masters" target="_blank" href="http://2018.masters.com/en_US/scores/track/track.html">Masters website tracking</a> functionality he was able to provide the first strokes gained statistics for
+                    the masters.
+                </p>
+                <p class="subtitle is-5 masters">
+                    In the lead up to the 2019 masters I decided to automate his process by scraping the track functionality (pictured upper left). This was tricky as the feature does not provide the lie of shots in text, only visually. To solve this problem I realised I could create maps of the still images the track feature is displayed on, and use the pixel values to categorise the lie types of shots.
+                </p>
+                <p class="subtitle is-5 masters">
+                    Unfortunately for this project, the Masters came out with brand new track functionality in 2019 which made this project useless. It's a great new feature but unfortunately we can't use this project to get strokes gained statistical insight. So this project is no longer being worked on, but it was a cool problem work on and solve for golf which I am very passionate about.
+                </p>
+                <a class="button is-rounded" target="_blank" href="https://github.com/mattDavo/masters-shotlink/blob/master/README.md">Read More</a>
+                <a class="button is-rounded" target="_blank" href="https://github.com/mattDavo/masters-shotlink">Source Code</a>
+            </div>
         </div>
     </section>
     
@@ -206,6 +258,7 @@
             <h1 class="title is-2 is-primary" id="solveable" style="display: block; padding-bottom: 10px">Enter 4 digits</h1>
             <p class="subtitle is-5">This solution uses dynamic programming where the solution to each subproblem P(i,j) is the set of numbers that can be produced with the subsequence of indexes i to j. We solve subproblems in order of increasing length of subsequence (that is j - i). Then our puzzle is solveable if 10 exists in the set of the solution to P(1,4).</p>
             <p class="subtitle is-5">This solution can easily be extended to solve similar problems with longer sequences and/or a larger range of values allowed for numbers in the sequence since (instead of limiting them to single digits). Additionally, the solution can be easily altered to solve for different numbers, instead of 10. All of these modifications will scale much better than a brute force attempt of placing parentheses and operators in the possible combinations.</p>
+            <p class="subtitle is-6">I'm yet to find any wrong answers for my solver, but if you do find one, send me an <a href="mailto:mad1512@optusnet.com.au">email</a>.</p>
         </div>
     </section>
     <script src="index.js"></script>
