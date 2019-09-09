@@ -123,3 +123,9 @@ p.policy-pilot {
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
+
+/* UNSW */
+.title.uni-projects, .subtitle.uni-projects {
+  color: #333;
+}
+
